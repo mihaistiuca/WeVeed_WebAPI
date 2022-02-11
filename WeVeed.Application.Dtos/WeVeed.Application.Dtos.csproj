@@ -1,0 +1,226 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Series\**" />
+    <EmbeddedResource Remove="Series\**" />
+    <None Remove="Series\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Series\Dtos\ProducerSeriesDto.cs" />
+    <Compile Include="Series\Dtos\SeriesLastEpisodeDto.cs" />
+    <Compile Include="Series\Dtos\SeriesUpdateDto.cs" />
+    <Compile Include="Series\Dtos\SeriesViewDto.cs" />
+    <Compile Include="Series\Dtos\SeriesViewListDto.cs" />
+    <Compile Include="Series\Inputs\IsSeriesNameUniqueCreateInput.cs" />
+    <Compile Include="Series\Inputs\IsSeriesNameUniqueUpdateInput.cs" />
+    <Compile Include="Series\Inputs\SearchSeriesInput.cs" />
+    <Compile Include="Series\Inputs\SeriesCreateInput.cs" />
+    <Compile Include="Series\Inputs\SeriesFollowInput.cs" />
+    <Compile Include="Series\Inputs\SeriesUpdateInput.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="gen\AllVideoPaginateInput.ts">
+      <CustomToolNamespace>Video\Inputs\AllVideoPaginateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\CommentCreateInput.ts">
+      <CustomToolNamespace>Comment\Inputs\CommentCreateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\CommentDisplayUiDto.ts">
+      <CustomToolNamespace>Comment\Dtos\CommentDisplayUiDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\CommentUpdateInput.ts">
+      <CustomToolNamespace>Comment\Inputs\CommentUpdateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ConfirmAccountInput.ts">
+      <CustomToolNamespace>User\Inputs\ConfirmAccountInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\CountViewsMobileInput.ts">
+      <CustomToolNamespace>Video\Inputs\CountViewsMobileInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\GetChannelNextVideoInput.ts">
+      <CustomToolNamespace>Channel\Inputs\GetChannelNextVideoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\GetChannelPlayingNowVideoListInput.ts">
+      <CustomToolNamespace>Channel\Inputs\GetChannelPlayingNowVideoListInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\GetChannelVideoInput.ts">
+      <CustomToolNamespace>Channel\Inputs\GetChannelVideoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\GetMyChannelNextVideoInput.ts">
+      <CustomToolNamespace>Channel\Inputs\GetMyChannelNextVideoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\GetMyChannelPlayingNowVideoListInput.ts">
+      <CustomToolNamespace>Channel\Inputs\GetMyChannelPlayingNowVideoListInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\GetMyChannelVideoInput.ts">
+      <CustomToolNamespace>Channel\Inputs\GetMyChannelVideoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\IsEmailUniqueInput.ts">
+      <CustomToolNamespace>User\Inputs\IsEmailUniqueInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\IsLoggedProducerNameUniqueInput.ts">
+      <CustomToolNamespace>User\Inputs\IsLoggedProducerNameUniqueInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\IsProducerNameUniqueInput.ts">
+      <CustomToolNamespace>User\Inputs\IsProducerNameUniqueInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\IsProducerUniqueInput.ts">
+      <CustomToolNamespace>User\Inputs\IsProducerUniqueInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\IsSeriesNameUniqueInput.ts">
+      <CustomToolNamespace>Series\Inputs\IsSeriesNameUniqueInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\IsSeriesNameUniqueUpdateInput.ts">
+      <CustomToolNamespace>Series\Inputs\IsSeriesNameUniqueUpdateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\OpenDiscussionRoomViewDto.ts">
+      <CustomToolNamespace>Toko\OpenDiscussionsRoom\Dtos\OpenDiscussionRoomViewDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\PingInput.ts">
+      <CustomToolNamespace>Video\Inputs\PingInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ProducerListViewDto.ts">
+      <CustomToolNamespace>User\Dtos\ProducerListViewDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ProducerSeriesDto.ts">
+      <CustomToolNamespace>Series\Dtos\ProducerSeriesDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ProducerUpdateInfoInput.ts">
+      <CustomToolNamespace>User\Inputs\ProducerUpdateInfoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ProducerViewDto.ts">
+      <CustomToolNamespace>User\Dtos\ProducerViewDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ResetPasswordInput.ts">
+      <CustomToolNamespace>User\Inputs\ResetPasswordInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ResetPasswordSendEmailInput.ts">
+      <CustomToolNamespace>User\Inputs\ResetPasswordSendEmailInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SearchProducerInput.ts">
+      <CustomToolNamespace>User\Inputs\SearchProducerInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SearchSeriesInput.ts">
+      <CustomToolNamespace>Series\Inputs\SearchSeriesInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SearchVideoInput.ts">
+      <CustomToolNamespace>Video\Inputs\SearchVideoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesCreateInput.ts">
+      <CustomToolNamespace>Series\Inputs\SeriesCreateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesFollowInput.ts">
+      <CustomToolNamespace>Series\Inputs\SeriesFollowInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesLastEpisodeDto.ts">
+      <CustomToolNamespace>Series\Dtos\SeriesLastEpisodeDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesUpdateDto.ts">
+      <CustomToolNamespace>Series\Dtos\SeriesUpdateDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesUpdateInput.ts">
+      <CustomToolNamespace>Series\Inputs\SeriesUpdateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesViewDto.ts">
+      <CustomToolNamespace>Series\Dtos\SeriesViewDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\SeriesViewListDto.ts">
+      <CustomToolNamespace>Series\Dtos\SeriesViewListDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserAuthenticateDto.ts">
+      <CustomToolNamespace>User\Dtos\UserAuthenticateDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserBasicInfoDto.ts">
+      <CustomToolNamespace>User\Dtos\UserBasicInfoDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserBecomeProducerDto.ts">
+      <CustomToolNamespace>User\Dtos\UserBecomeProducerDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserBecomeProducerInput.ts">
+      <CustomToolNamespace>User\Inputs\UserBecomeProducerInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserFBRegisterInput.ts">
+      <CustomToolNamespace>User\Inputs\UserFBRegisterInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserLoginFacebookInput.ts">
+      <CustomToolNamespace>User\Inputs\UserLoginFacebookInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserLoginInput.ts">
+      <CustomToolNamespace>User\Inputs\UserLoginInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserLoginWithFBInput.ts">
+      <CustomToolNamespace>User\Inputs\UserLoginWithFBInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserRegisterInput.ts">
+      <CustomToolNamespace>User\Inputs\UserRegisterInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserUpdateInfoInput.ts">
+      <CustomToolNamespace>User\Inputs\UserUpdateInfoInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserVerifyFacebookRegisterDto.ts">
+      <CustomToolNamespace>User\Dtos\UserVerifyFacebookRegisterDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserVerifyFBInput.ts">
+      <CustomToolNamespace>User\Inputs\UserVerifyFBInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\UserVerifyRegisterFacebookInput.ts">
+      <CustomToolNamespace>User\Inputs\UserVerifyRegisterFacebookInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\ValidateProducerByAdminInput.ts">
+      <CustomToolNamespace>User\Inputs\ValidateProducerByAdminInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoCommentPaginationInput.ts">
+      <CustomToolNamespace>Comment\Inputs\VideoCommentPaginationInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoCreateInput.ts">
+      <CustomToolNamespace>Video\Inputs\VideoCreateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoDisplayCarouselDto.ts">
+      <CustomToolNamespace>Video\Dtos\VideoDisplayCarouselDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoDisplayDto.ts">
+      <CustomToolNamespace>Video\Dtos\VideoDisplayDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoDisplayUiDto.ts">
+      <CustomToolNamespace>Video\Dtos\VideoDisplayUiDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoPlayingNowDto.ts">
+      <CustomToolNamespace>Video\Dtos\VideoPlayingNowDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoUpdateDto.ts">
+      <CustomToolNamespace>Video\Dtos\VideoUpdateDto.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoUpdateInput.ts">
+      <CustomToolNamespace>Video\Inputs\VideoUpdateInput.cs</CustomToolNamespace>
+    </None>
+    <None Update="gen\VideoWatchDto.ts">
+      <CustomToolNamespace>Video\Dtos\VideoWatchDto.cs</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Channel\Dtos\" />
+    <Folder Include="gennn\" />
+    <Folder Include="NewFolder\" />
+    <Folder Include="Toko\OpenDiscussionsRoom\Inputs\" />
+  </ItemGroup>
+
+</Project>

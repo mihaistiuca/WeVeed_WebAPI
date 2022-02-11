@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeVeedWebAPI", "WeVeedWebAPI\WeVeedWebAPI.csproj", "{8237BF3D-A089-4441-B6A7-9DF2823BC4C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{498C53C2-4D32-4706-AA44-20970476CF01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{432BD79A-45FD-4ACF-BD0E-6D9CC85415C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeVeed.Application.Dtos", "WeVeed.Application.Dtos\WeVeed.Application.Dtos.csproj", "{2EBC4636-4E18-46F2-92AA-648832235202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeVeed.Domain.Services", "WeVeed.Domain.Services\WeVeed.Domain.Services.csproj", "{979E5382-351C-4BE5-9F92-98F87EA58AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeVeed.Domain.Entities", "WeVeed.Domain.Entities\WeVeed.Domain.Entities.csproj", "{B8A7E85B-6EEC-4326-8C86-F9397D7A6751}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonAndUtils", "CommonAndUtils", "{5BFB0837-703C-49CF-B477-758934FBFD63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources.Base", "Resources.Base\Resources.Base.csproj", "{5BAD94C1-41C0-43BA-8F53-9127C872282E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeVeed.Application.Services", "WeVeed.Application.Services\WeVeed.Application.Services.csproj", "{7DB8F3A5-482B-47CC-AAB6-E667E7EA074F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8237BF3D-A089-4441-B6A7-9DF2823BC4C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8237BF3D-A089-4441-B6A7-9DF2823BC4C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8237BF3D-A089-4441-B6A7-9DF2823BC4C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8237BF3D-A089-4441-B6A7-9DF2823BC4C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EBC4636-4E18-46F2-92AA-648832235202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBC4636-4E18-46F2-92AA-648832235202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBC4636-4E18-46F2-92AA-648832235202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBC4636-4E18-46F2-92AA-648832235202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979E5382-351C-4BE5-9F92-98F87EA58AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979E5382-351C-4BE5-9F92-98F87EA58AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979E5382-351C-4BE5-9F92-98F87EA58AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979E5382-351C-4BE5-9F92-98F87EA58AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A7E85B-6EEC-4326-8C86-F9397D7A6751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A7E85B-6EEC-4326-8C86-F9397D7A6751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A7E85B-6EEC-4326-8C86-F9397D7A6751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A7E85B-6EEC-4326-8C86-F9397D7A6751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAD94C1-41C0-43BA-8F53-9127C872282E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAD94C1-41C0-43BA-8F53-9127C872282E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAD94C1-41C0-43BA-8F53-9127C872282E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAD94C1-41C0-43BA-8F53-9127C872282E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB8F3A5-482B-47CC-AAB6-E667E7EA074F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB8F3A5-482B-47CC-AAB6-E667E7EA074F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB8F3A5-482B-47CC-AAB6-E667E7EA074F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB8F3A5-482B-47CC-AAB6-E667E7EA074F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EBC4636-4E18-46F2-92AA-648832235202} = {498C53C2-4D32-4706-AA44-20970476CF01}
+		{979E5382-351C-4BE5-9F92-98F87EA58AA2} = {432BD79A-45FD-4ACF-BD0E-6D9CC85415C6}
+		{B8A7E85B-6EEC-4326-8C86-F9397D7A6751} = {432BD79A-45FD-4ACF-BD0E-6D9CC85415C6}
+		{5BAD94C1-41C0-43BA-8F53-9127C872282E} = {5BFB0837-703C-49CF-B477-758934FBFD63}
+		{7DB8F3A5-482B-47CC-AAB6-E667E7EA074F} = {498C53C2-4D32-4706-AA44-20970476CF01}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A5BB2D1-A9A8-4B01-8D6B-ED946E295F89}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mihaistiuca.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Resources.Base\\Resources.Base.csproj
+		SccProjectTopLevelParentUniqueName1 = WeVeedWebAPI.sln
+		SccProjectName1 = Resources.Base
+		SccLocalPath1 = Resources.Base
+		SccProjectUniqueName2 = WeVeed.Application.Dtos\\WeVeed.Application.Dtos.csproj
+		SccProjectTopLevelParentUniqueName2 = WeVeedWebAPI.sln
+		SccProjectName2 = WeVeed.Application.Dtos
+		SccLocalPath2 = WeVeed.Application.Dtos
+		SccProjectUniqueName3 = WeVeed.Application.Services\\WeVeed.Application.Services.csproj
+		SccProjectTopLevelParentUniqueName3 = WeVeedWebAPI.sln
+		SccProjectName3 = WeVeed.Application.Services
+		SccLocalPath3 = WeVeed.Application.Services
+		SccProjectUniqueName4 = WeVeed.Domain.Entities\\WeVeed.Domain.Entities.csproj
+		SccProjectTopLevelParentUniqueName4 = WeVeedWebAPI.sln
+		SccProjectName4 = WeVeed.Domain.Entities
+		SccLocalPath4 = WeVeed.Domain.Entities
+		SccProjectUniqueName5 = WeVeed.Domain.Services\\WeVeed.Domain.Services.csproj
+		SccProjectTopLevelParentUniqueName5 = WeVeedWebAPI.sln
+		SccProjectName5 = WeVeed.Domain.Services
+		SccLocalPath5 = WeVeed.Domain.Services
+		SccProjectUniqueName6 = WeVeedWebAPI\\WeVeedWebAPI.csproj
+		SccProjectName6 = WeVeedWebAPI
+		SccLocalPath6 = WeVeedWebAPI
+	EndGlobalSection
+EndGlobal
